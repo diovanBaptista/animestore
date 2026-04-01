@@ -139,6 +139,11 @@ Durante o desenvolvimento deste projeto, foram praticados:
 
 > ![alt text](image-3.png)
 
+* Geração de Open Graph Image dinâmica
+
+> <img width="1904" height="956" alt="image" src="https://github.com/user-attachments/assets/decf34d1-309f-4e7b-8005-d9d6d7c8324e" />
+
+
 
 ---
 
