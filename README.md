@@ -135,7 +135,7 @@ Durante o desenvolvimento deste projeto, foram praticados:
 
 > ![alt text](image-2.png)
 
-* Movimentacao na quantidade de produtos no carrinho
+* Movimentacão na quantidade de produtos no carrinho
 
 > ![alt text](image-3.png)
 
