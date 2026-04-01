@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Animestore
 
-## Getting Started
+Projeto desenvolvido com base no **DevStore da Rocketseat**, com o objetivo de praticar conceitos modernos de desenvolvimento web utilizando o ecossistema React e Next.js.
 
-First, run the development server:
+---
+
+## 🚀 Sobre o projeto
+
+O **Animestore** é uma aplicação de e-commerce focada em aprendizado, simulando funcionalidades reais de uma loja online.
+
+Neste projeto foram explorados conceitos importantes como:
+
+* ⚡ Renderização com App Router
+* 🔄 Server Components vs Client Components
+* 🧠 Manipulação de estado e contexto
+* 🔍 Sistema de busca com query params
+* 🖼️ Geração de Open Graph Image dinâmica
+* 📦 Consumo de API interna
+* 🎨 Estilização com Tailwind CSS
+* ⏳ Loading states com `loading.tsx`
+
+---
+
+## 🧪 Tecnologias utilizadas
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **Zod** (validação de ambiente)
+* **Node.js**
+
+---
+
+## 📁 Estrutura do projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+app/
+  api/                # Rotas de API (backend)
+  (store)/            # Rotas da aplicação
+    home/
+    search/
+    product/
+  components/         # Componentes reutilizáveis
+  contexts/           # Context API (ex: carrinho)
+  data/               # Mock de dados
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔍 Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* ✅ Listagem de produtos
+* ✅ Página de produto dinâmica
+* ✅ Busca de produtos por nome
+* ✅ Skeleton loading durante carregamento
+* ✅ Geração de imagens Open Graph dinâmicas
+* ✅ Navegação otimizada com App Router
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Como rodar o projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Clone o repositório
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+git clone https://github.com/seu-usuario/devstore.git
+```
 
-## Deploy on Vercel
+### 2. Acesse a pasta
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+cd devstore
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Instale as dependências
+
+```bash
+pnpm install
+# ou
+npm install
+```
+
+### 4. Configure o ambiente
+
+Crie um arquivo `.env.local`:
+
+```env
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
+APP_URL=http://localhost:3000
+```
+
+### 5. Rode o projeto
+
+```bash
+pnpm dev
+# ou
+npm run dev
+```
+
+---
+
+## 🌐 Rotas importantes
+
+* `/` → Página inicial
+* `/product/[slug]` → Produto
+* `/search?q=nome` → Busca
+* `/api/products` → API
+
+---
+
+## 🧠 Aprendizados
+
+Durante o desenvolvimento deste projeto, foram praticados:
+
+* Organização de projeto com App Router
+* Uso de rotas dinâmicas
+* Tratamento de erros e validações
+* Boas práticas com TypeScript
+* Integração entre frontend e backend no Next.js
+
+---
+
+## 📸 Preview
+
+* Tela home do projeto
+
+> ![alt text](image.png)
+
+* Tela de Infomormações do Produto
+
+> ![alt text](image-1.png) 
+
+* Tela de Busca dos Produtos
+
+> ![alt text](image-2.png)
+
+* Movimentacao na quantidade de produtos no carrinho
+
+> ![alt text](image-3.png)
+
+
+---
+
+## 📌 Observações
+
+Este projeto tem fins educacionais e foi inspirado no conteúdo da Rocketseat.
+
+---
+
+## 👨‍💻 Autor
+
+Feito por **Diovan Baptista** 🚀
